@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className="banner">
         <div className="navbar">
-          <img src="/buttonhover/src/assets/images/blue-logo.png" alt="Blue logo" className="logo"/>
+          <img src="./assets/images/blue-logo.png" alt="Blue logo" className="logo"/>
           <ul>
             <li><a href="home.js">Home</a></li>
             <li><a href="bedroom.js">Bedroom</a></li>
