@@ -1,4 +1,5 @@
-
+import React from 'react';
+import logo from './assets/images/blue-logo.png';
 import './App.css';
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <div className="App">
       <div className="banner">
         <div className="navbar">
-          <img src="./assets/images/blue-logo.png" alt="Blue logo" className="logo"/>
+          <img src={logo} alt="Blue logo" className="logo"/>
           <ul>
             <li><a href="home.js">Home</a></li>
             <li><a href="bedroom.js">Bedroom</a></li>
