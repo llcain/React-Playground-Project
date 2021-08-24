@@ -1,30 +1,21 @@
-
+import React from 'react';
 import './App.css';
+
+import Bedroom from './Bedroom';
+import Home from './Home';
+import Dining from './dining';
+import Backyard from './backyard';
+import Kitchen from './Kitchen';
+import { Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <div className="banner">
-        <div className="navbar">
-          <img src="./assets/images/blue-logo.png" alt="Blue logo" className="logo"/>
-          <ul>
-            <li><a href="home.js">Home</a></li>
-            <li><a href="bedroom.js">Bedroom</a></li>
-            <li><a href="dining.js">Dining</a></li>
-            <li><a href="kitchen.js">Kitchen</a></li>
-            <li><a href="backyard.js">Backyard</a></li>
-          </ul>
-        </div>
-
-        <div className="content">
-          <h1>DESIGN YOUR HOUSE</h1>
-          <p>Subscribe Easy Tutorials YouTub Channel to watch more videos, <br/>press the bell icon to get latest updates.</p>
-          <div>
-            <button type="button"><span></span>WATCH MORE</button>
-            <button type="button"><span></span>SUBSCRIBE</button>
-          </div>
-        </div>
-      </div>
+     <Route exact path="/" component={Home} />
+     <Route exact path="/bedroom" component={Bedroom} />
+     <Route exact path="/dining" component={Dining} />
+     <Route exact path="/kitchen" component={Kitchen} />
+     <Route exact path="/backyard" component={Backyard} />
     </div>
   );
 }
